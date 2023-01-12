@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Day</title>
+    <script src="other/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="other/style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77WW9FBJBK"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-77WW9FBJBK');
+    </script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <span>Happy Valentine's Day!</span>
+        </div>
+        <div class="msg">
+            <span>To my best friend this Valentine's Day, I couldn't ask for someone who
+                loves and supports me more than you do. Happy Valentine's Day !</span>
+        </div>
+        <div class="ask">
+            <center>
+                <span id="text">Click on first Gift</span>
+            </center>
+        </div>
+        <div class="image">
+            <center>
+                <img id="rose" src="img/gift2.png" alt="rose">&nbsp;
+                <img id="gift" src="img/gift.png" alt="gift">&nbsp;
+                <img id="you" src="img/gift3.png" alt="gift3">
+            </center>
+        </div>
+    </div>
+        <script>
+        let person = prompt("Please enter your name");
+        if (person == null || person == "") {
+            window.location.replace('name.html');
+        }
+        else{
+
+            var images = ["img/I.png"]
+            var imgState = 0;
+            var imgTag = document.getElementById("rose");
+            imgTag.addEventListener("click", function (event) {
+            imgState = (++imgState % images.length);
+            event.target.src = images[imgState];
+            document.getElementById("text").innerHTML = "Click on second gift";
+            });
+            
+            var I = ["img/heart.png"]
+            var imgState = 0;
+            var imgTag = document.getElementById("gift");
+            imgTag.addEventListener("click", function (teddy) {
+            imgState = (++imgState % I.length);
+            event.target.src = I[imgState];
+            document.getElementById("text").innerHTML = "Click on last gift";
+            });
+
+            var u = ["img/u.png"]
+            var imgState = 0;
+            var imgTag = document.getElementById("you");
+            imgTag.addEventListener("click", function (teddy) {
+            imgState = (++imgState % u.length);
+            event.target.src = u[imgState];
+            if (person == "" || person == null){
+                document.getElementById("text").innerHTML = "I love you";
+                setTimeout(function(){
+                window.location.href = "kidding.html";
+                }, 4000);
+            }
+            else{
+                document.getElementById("text").innerHTML = "I love you "+ person;
+                setTimeout(function(){
+                window.location.href = "kidding.html";
+                }, 4000);
+            }
+            
+            });
+        }
+
+    </script>
+</body>
+</html

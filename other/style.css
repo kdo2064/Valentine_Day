@@ -1,0 +1,388 @@
+/*import  font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+            box-shadow: 0px;
+            padding: 0px;
+            margin: 0px;
+            height: auto;
+            width: auto;
+}
+body{
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+.title{
+    font-family: 'Dancing Script', cursive;
+    color: aqua;
+    text-align: center;
+    padding-top: 1.7rem;
+    font-size: 2.8rem;
+    font-weight: 100;
+    text-shadow: 0 0 7px red,
+                0 0 14px green,
+                0 0 21px white,
+                0 0 28px yellow,
+                0 0 35px red,
+                0 0 42px white,
+                0 0 49px lightblue;
+    animation: title 1s linear   infinite alternate;
+}
+.msg{
+    margin-top: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.msg span{
+    color:aqua;
+    font-size: 1.7rem;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    text-shadow: 0 0 7px black,
+                0 0 14px rgb(138, 58, 58),
+                0 0 21px red;
+}
+.ask{
+    top: 50%;
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+}
+.ask span{
+    font-weight: bolder;
+    font-size: 2rem;
+    animation: ask 0.7s linear   infinite alternate;
+    color: rgb(255, 196, 0);
+        text-shadow: 0 0 7px rgb(0, 0, 0),
+                0 0 14px rgb(0, 0, 0),
+                0 0 21px rgb(0, 0, 0),
+                0 0 28px rgb(240, 240, 127),
+                0 0 35px red,
+                0 0 42px rgb(255, 255, 255),
+                0 0 49px lightblue;
+}
+.image{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    margin-bottom: 1rem;
+}
+#rose{
+    height: 10rem;
+    width: auto;
+}
+#gift{
+    height: 10rem;
+    width: auto;
+    padding-left: 2rem;
+}
+#you{
+    height: 10rem;
+    width: auto;
+    padding-left: 2rem;
+}
+/* animation */
+
+@keyframes ask {
+    0%{
+        font-size: 2.4rem;
+        color: red;
+    }
+}
+@keyframes title {
+    0%{
+        color: rgb(215, 236, 29);
+        text-shadow: 0 0 7px rgb(0, 0, 0),
+                0 0 14px rgb(0, 0, 0),
+                0 0 21px rgb(0, 0, 0),
+                0 0 28px rgb(240, 240, 127),
+                0 0 35px red,
+                0 0 42px rgb(255, 255, 255),
+                0 0 49px lightblue;
+    }
+    10%{
+        color: rgb(0, 255, 64);
+        text-shadow: 0 0 7px rgb(0, 0, 0),
+                0 0 14px rgb(0, 0, 0),
+                0 0 21px rgb(0, 0, 0),
+                0 0 28px rgb(240, 240, 127),
+                0 0 35px red,
+                0 0 42px rgb(255, 255, 255),
+                0 0 49px lightblue;
+    }
+    20%{
+        color: rgb(138, 5, 120);
+        text-shadow: 0 0 7px rgb(0, 0, 0),
+                0 0 14px rgb(0, 5, 4),
+                0 0 21px rgb(0, 0, 0),
+                0 0 28px rgb(240, 240, 127),
+                0 0 35px red,
+                0 0 42px rgb(255, 255, 255),
+                0 0 49px lightblue;
+    }
+    30%{
+        color: rgb(29, 236, 29);
+        text-shadow: 0 0 7px rgb(0, 0, 0),
+                0 0 14px rgb(0, 0, 0),
+                0 0 21px rgb(0, 0, 0),
+                0 0 28px rgb(240, 240, 127),
+                0 0 35px red,
+                0 0 42px rgb(255, 255, 255),
+                0 0 49px lightblue;
+    }
+    40%{
+        color: rgb(91, 29, 236);
+        text-shadow: 0 0 7px rgb(0, 0, 0),
+                0 0 14px rgb(1, 3, 3),
+                0 0 21px rgb(0, 0, 0),
+                0 0 28px rgb(240, 240, 127),
+                0 0 35px red,
+                0 0 42px rgb(255, 255, 255),
+                0 0 49px lightblue;
+    }
+    50%{
+        color: rgb(29, 236, 29);
+        text-shadow: 0 0 7px rgb(0, 0, 0),
+                0 0 14px rgb(0, 0, 0),
+                0 0 21px rgb(8, 1, 1),
+                0 0 28px rgb(240, 240, 127),
+                0 0 35px red,
+                0 0 42px rgb(255, 255, 255),
+                0 0 49px lightblue;
+    }
+    60%{
+        color: rgb(0, 22, 150);
+        text-shadow: 0 0 7px rgb(0, 0, 0),
+                0 0 14px rgb(0, 2, 2),
+                0 0 21px rgb(0, 0, 0),
+                0 0 28px rgb(255, 255, 0),
+                0 0 35px rgb(255, 0, 0),
+                0 0 42px rgb(255, 255, 255),
+                0 0 49px rgb(0, 191, 255);
+    }
+    70%{
+        color: rgb(255, 0, 0);
+        text-shadow: 0 0 7px rgb(11, 19, 8),
+                0 0 14px rgb(3, 7, 6),
+                0 0 21px rgb(7, 3, 3),
+                0 0 28px rgb(240, 240, 127),
+                0 0 35px red,
+                0 0 42px rgb(255, 255, 255),
+                0 0 49px lightblue;
+    }
+    80%{
+        color: rgb(29, 236, 29);
+        text-shadow: 0 0 7px rgb(13, 17, 12),
+                0 0 14px rgb(2, 26, 22),
+                0 0 21px rgb(0, 0, 0),
+                0 0 28px rgb(240, 240, 127),
+                0 0 35px red,
+                0 0 42px rgb(255, 255, 255),
+                0 0 49px lightblue;
+    }
+    90%{
+        color: rgb(76, 0, 255);
+        text-shadow: 0 0 7px rgb(0, 0, 0),
+                0 0 14px rgb(0, 0, 0),
+                0 0 21px rgb(0, 0, 0),
+                0 0 28px rgb(240, 240, 127),
+                0 0 35px red,
+                0 0 42px rgb(255, 255, 255),
+                0 0 49px lightblue;
+    }
+    100%{
+        color: rgb(255, 0, 191);
+        text-shadow: 0 0 7px rgb(0, 0, 0),
+                0 0 14px rgb(0, 0, 0),
+                0 0 21px rgb(0, 0, 0),
+                0 0 28px rgb(240, 240, 127),
+                0 0 35px red,
+                0 0 42px rgb(255, 255, 255),
+                0 0 49px lightblue;
+    }
+}
+
+@media (max-width:5000px) {
+    .msg{
+        text-align: center;
+    }
+    .msg span{
+        text-align: center;
+        font-size: 2rem;
+    }
+    #rose{
+        height: 18rem;
+        width: auto;
+    }
+    #gift{
+        height: 18rem;
+        width: auto;
+        padding-left: 5rem;
+    }
+    #you{
+        height: 18rem;
+        width: auto;
+        padding-left: 5rem;
+    }
+}
+@media (max-width:1056px) {
+    .msg{
+        text-align: center;
+    }
+    .msg span{
+        text-align: center;
+        font-size: 2rem;
+    }
+    #rose{
+        height: 15rem;
+        width: auto;
+    }
+    #gift{
+        height: 15rem;
+        width: auto;
+        padding-left: 2rem;
+    }
+    #you{
+        height: 15rem;
+        width: auto;
+        padding-left: 2rem;
+    }
+}
+@media (max-width:816px) {
+    .msg{
+        text-align: center;
+    }
+    .msg span{
+        text-align: center;
+        font-size: 2rem;
+    }
+    #rose{
+        height: 14rem;
+        width: auto;
+    }
+    #gift{
+        height: 14rem;
+        width: auto;
+        padding-left: 1rem;
+    }
+    #you{
+        height: 14rem;
+        width: auto;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width:724px) {
+    .msg{
+        text-align: center;
+    }
+    .msg span{
+        text-align: center;
+        font-size: 2rem;
+    }
+    #rose{
+        height: 10rem;
+        width:  auto;
+    }
+    #gift{
+        height: 10rem;
+        width: auto;
+        padding-left: 1rem;
+    }
+    #you{
+        height: 10rem;
+        width: auto;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width:610px) {
+    .title{
+        font-size: 2.2rem;
+    }
+    .msg{
+        text-align: center;
+    }
+    .msg span{
+        text-align: center;
+        font-size: 1.7em;
+    }
+    #rose{
+        height: 10rem;
+        width:  auto;
+    }
+    #gift{
+        height: 10rem;
+        width: auto;
+        padding-left: 1rem;
+    }
+    #you{
+        height: 10rem;
+        width: auto;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width:508px) {
+    .title{
+        font-size: 2.2rem;
+    }
+    .msg{
+        text-align: center;
+    }
+    .msg span{
+        text-align: center;
+        font-size: 1.7em;
+    }
+    #rose{
+        height: 8rem;
+        width:  auto;
+    }
+    #gift{
+        height: 8rem;
+        width: auto;
+    }
+    #you{
+        height: 8rem;
+        width: auto;
+    }
+}
+@media (max-width:424px) {
+    .title{
+        font-size: 2rem;
+    }
+    .msg{
+        text-align: center;
+    }
+    .msg span{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    #rose{
+        height: 7rem;
+        width:  6rem;
+    }
+    #gift{
+        height: 7rem;
+        width: 6rem;
+    }
+    #you{
+        height: 7rem;
+        width: 6rem;
+    }
+    .ask span{
+                font-size: 1.1rem;
+            }
+            @keyframes ask {
+            0%{
+                font-size: 1.4rem;
+            }
+        }
+}

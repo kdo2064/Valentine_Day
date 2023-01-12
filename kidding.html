@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Day</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77WW9FBJBK"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-77WW9FBJBK');
+    </script>
+
+    <style>
+        *{
+                    box-shadow: 0px;
+                    padding: 0px;
+                    margin: 0px;
+                    height: auto;
+                    width: auto;
+        }
+        body{
+            background-image: url("/img/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.76);
+        }
+        .ask{
+            top: 50%;
+            position: absolute;
+            width: 100vw;
+            height: 10vh;
+        }
+        .ask span{
+            font-weight: bolder;
+            font-size: 2rem;
+            animation: ask 0.7s linear   infinite alternate;
+            color: rgb(255, 196, 0);
+            text-shadow: 0 0 7px rgb(0, 0, 0),
+                        0 0 14px rgb(0, 0, 0),
+                        0 0 21px rgb(0, 0, 0),
+                        0 0 28px rgb(240, 240, 127),
+                        0 0 35px red,
+                        0 0 42px rgb(255, 255, 255),
+                        0 0 49px lightblue;
+        }
+        @keyframes ask {
+            0%{
+                font-size: 2.4rem;
+                color: red;
+            }
+        }
+        @keyframes ask {
+            0%{
+                font-size: 2.4rem;
+                color: red;
+            }
+        }
+        @media (max-width:500px ) {
+            .ask span{
+                font-size: 1.1rem;
+            }
+            @keyframes ask {
+            0%{
+                font-size: 1.4rem;
+            }
+        }
+    }
+        @media (max-width:332px ) {
+            .ask span{
+                font-size: 0.9rem;
+            }
+            @keyframes ask {
+            0%{
+                font-size: 1.2rem;
+            }
+        }
+    }
+        @media (max-width:240px ) {
+            .ask span{
+                font-size: 0.7rem;
+            }
+            @keyframes ask {
+            0%{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="ask">
+            <center>
+                <span>Oops! I was Kidding &#128522;</span>
+            </center>
+        </div>
+    </div>
+    <script>
+    setTimeout(function(){
+        alert("Sorry, I was just kidding")
+        window.location.href = "index.html";
+    }, 4000);
+    </script>
+</body>
+</html>
