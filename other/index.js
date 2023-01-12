@@ -1,4 +1,4 @@
-var images = ["img/heart.png"]
+var images = ["/Valentine_Day/img/heart.png"]
 var imgState = 0;
 var imgTag = document.getElementById("rose");
 imgTag.addEventListener("click", function (event) {
@@ -7,7 +7,7 @@ event.target.src = images[imgState];
 document.getElementById("text").innerHTML = "Click on last teddy";
 });
 
-var I = ["img/I.png"]
+var I = ["/Valentine_Day/img/I.png"]
 var imgState = 0;
 var imgTag = document.getElementById("gift");
 imgTag.addEventListener("click", function (teddy) {
@@ -16,7 +16,7 @@ event.target.src = I[imgState];
 document.getElementById("on").innerHTML = "Click on Gift";
 });
 
-var u = ["img/you.png"]
+var u = ["/Valentine_Day/img/you.png"]
 var imgState = 0;
 var imgTag = document.getElementById("you");
 imgTag.addEventListener("click", function (teddy) {
