@@ -1,31 +1,4 @@
-<style>
-    *{
-        background-color:black;
-    }
-    h1{
-        font-size: 2rem;
-        text-align:center;
-        font-weight:bold;
-        color:red;
-        text-shadow: 0 0 7px blue,
-                     0 0 14px black;    
-    }
-    span{
-        color: lightgreen;
-        font-weight: bolder;
-    }
-    h2{
 
-        text-align:center;
-        font-weight:bold;
-        color: cyan;
-        text-shadow: 0 0 7px blue,
-                     0 0 14px black;  
-    }
-    ol{
-        color: yellow;
-    }
-</style>
 
 <h1>Valentine Day Prank</h1>
 <h3>This webpage is made for prank. you can use &nbsp; <span>https://kdo2064.github.io/Valentine_Day/</span> link to visit to site but don't copy the code. scolding in hind (Agar koi madhochod mera code copy kare ga ushaka ma ch****. so please don't copy my code.</h3>
