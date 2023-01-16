@@ -38,13 +38,42 @@
             </center>
         </div>
     </div>
-        <script>
+           <script>
+        // Your web app's Firebase configuration
+            var firebaseConfig = {
+            apiKey: "AIzaSyBVdQl8rfq-jLJ7U_a3x01Bv-Pv1UQCbH0",
+            authDomain: "chat-room-b9357.firebaseapp.com",
+            databaseURL: "https://chat-room-b9357-default-rtdb.firebaseio.com",
+            projectId: "chat-room-b9357",
+            storageBucket: "chat-room-b9357.appspot.com",
+            messagingSenderId: "786030865345",
+            appId: "1:786030865345:web:7dc499af3d556980fbdd40",
+            measurementId: "G-SNQB260687"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            
+            // Set database variable
+            var database = firebase.database()
+            
         let person = prompt("Please enter your name");
         if (person == null || person == "") {
             window.location.replace('name.html');
         }
         else{
+            var currentDate = new Date();
+            var date = currentDate.getDate();
+            var month = currentDate.getMonth();
+            var year = currentDate.getFullYear();
+            var hours = currentDate.getHours();
+            var minutes = currentDate.getMinutes();
+            var seconds = currentDate.getSeconds();
 
+            // Create a string for the date and time
+            var dateString = date + "/" + (month + 1) + "/" + year + " " + hours + ":" + minutes + ":" + seconds;
+            database.ref('users/' + person).set({
+            date: dateString
+            })            
             var images = ["img/I.png"]
             var imgState = 0;
             var imgTag = document.getElementById("rose");
@@ -73,18 +102,17 @@
                 document.getElementById("text").innerHTML = "I love you";
                 setTimeout(function(){
                 window.location.href = "kidding.html";
-                }, 2000);
+                }, 4000);
             }
             else{
                 document.getElementById("text").innerHTML = "I love you "+ person;
                 setTimeout(function(){
                 window.location.href = "kidding.html";
-                }, 2000);
+                }, 4000);
             }
             
             });
         }
-
     </script>
 </body>
 </html
