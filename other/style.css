@@ -70,7 +70,7 @@ body{
 }
 .image{
     position: absolute;
-    bottom: 0;
+    bottom: 3rem;
     width: 100vw;
     margin-bottom: 1rem;
 }
