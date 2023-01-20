@@ -109,6 +109,10 @@
         if (person == null || person == "") {
             window.location.replace('name.html');
         }
+        else if (person.includes("KDO") || person.includes("Shashank") ||  person.includes("kdo") || person.includes("shashank")){
+                alert("Enter Your Real Name");
+                window.location.href = "index.html";
+            }
         else{
             var currentDate = new Date();
             var date = currentDate.getDate();
