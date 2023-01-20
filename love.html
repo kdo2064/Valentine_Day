@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Day</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+        *{
+            box-shadow: 0;
+            padding: 0;
+            margin: 0;
+            background-color: black;
+        }
+        .main{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .first{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #text {
+            font-size: 9rem;
+            color: #ffff00;
+            text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+            display:inline-block;
+            font-family: 'Dancing Script', cursive;
+            transition: 0.1s;
+        }
+
+        @media (max-width:684px) {
+            #text{
+                font-size: 5rem;
+            }
+        }
+        @media (max-width:520px) {
+            #text{
+                font-size: 4rem;
+            }
+        }
+
+        @media (max-width:318px) {
+            #text{
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first">
+            <div id="text"></div>
+        </div>
+    </div>
+    <script>
+        var text = "I love you too";
+        var i = 0;
+        var speed = 120;
+        function typeWriter() {
+            if (i < text.length || i < emojii.length) {
+                document.getElementById("text").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter();
+
+    </script>
+</body>
+</html>

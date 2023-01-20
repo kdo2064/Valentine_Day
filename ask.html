@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Day</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77WW9FBJBK"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-77WW9FBJBK');
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+        .copyright{
+            
+            width: 99.6%;
+            height: 4rem;
+            background-color: black;
+            bottom: 0;
+            position: absolute;
+        }
+        footer{  
+            color: aliceblue;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .copyright span{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+        }
+        @media (max-width:388px) {
+            footer{
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width:388px) {
+            footer{
+                font-size: 0.8rem;
+            }
+        }
+        
+        *{
+                    box-shadow: 0px;
+                    padding: 0px;
+                    margin: 0px;
+                    height: auto;
+                    width: auto;
+        }
+        body{
+            background-image: url("/img/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.76);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ask{
+            margin-top: -2rem;
+            font-weight: bolder;
+            font-size: 2rem;
+            animation: ask 0.7s linear   infinite alternate;
+            color: rgb(255, 196, 0);
+            text-shadow: 0 0 7px rgb(0, 0, 0),
+                        0 0 14px rgb(0, 0, 0),
+                        0 0 21px rgb(0, 0, 0),
+                        0 0 28px rgb(240, 240, 127),
+                        0 0 35px red,
+                        0 0 42px rgb(255, 255, 255),
+                        0 0 49px lightblue
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20rem;
+            height: 15rem;
+            border: 2px solid red;
+            animation: boder 4s linear   infinite alternate;
+        }
+        .second{
+            text-align: center;
+            margin-top: 4rem;
+        }
+        .button{
+            padding-top: 1.5rem;
+        }
+        button{
+            height: 2.7rem;
+            width: 5rem;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            background-color: rgba(240, 248, 255, 0.082);
+            color: wheat;
+
+        }
+        #yes:hover{
+            background-color: rgba(172, 255, 47, 0.616);
+            transition: 0.5s;
+            color: wheat;
+        }
+        #no:hover{
+            background-color: rgba(255, 0, 0, 0.733);
+            transition: 0.5s;
+            color: wheat;
+        }
+
+
+        /* animation */
+        @keyframes boder {
+            0%{
+                border: 2px solid rgb(255, 174, 0);
+            }
+            5%{
+                border: 2px solid rgb(200, 255, 0);
+            }
+            10%{
+                border: 2px solid rgb(51, 255, 0);
+            }
+            15%{
+                border: 2px solid rgb(0, 255, 128);
+            }
+            20%{
+                border: 2px solid rgb(0, 255, 221);
+            }
+            25%{
+                border: 2px solid rgb(0, 174, 255);
+            }
+            30%{
+                border: 2px solid rgb(98, 0, 255);
+            }
+            35%{
+                border: 2px solid rgb(255, 0, 242);
+            }
+            40%{
+                border: 2px solid rgb(255, 0, 149);
+            }
+            45%{
+                border: 2px solid rgb(94, 13, 13);
+            }
+            50%{
+                border: 2px solid rgb(74, 155, 87);
+            }
+            55%{
+                border: 2px solid rgb(126, 61, 170);
+            }
+            60%{
+                border: 2px solid rgb(45, 129, 73);
+            }
+            65%{
+                border: 2px solid rgb(146, 91, 55);
+            }
+            70%{
+                border: 2px solid rgb(39, 153, 128);
+            }
+            75%{
+                border: 2px solid rgb(55, 109, 170);
+            }
+            80%{
+                border: 2px solid rgb(247, 232, 201);
+            }
+            85%{
+                border: 2px solid rgb(33, 28, 77);
+            }
+            90%{
+                border: 2px solid rgb(155, 112, 19);
+            }
+            95%{
+                border: 2px solid rgb(167, 207, 36);
+            }
+            100%{
+                border: 2px solid rgb(38, 153, 147);
+            }
+        }
+
+        @media (max-width:352px) {
+            .box{
+                width: 15rem;
+                height: 10rem;
+            }
+            .ask{
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <center>
+            <div class="box">
+                <div class="second">
+                    <div class="ask">
+                
+                    <span>Do You Love me ?&#128522;</span>
+                </div>
+                <div class="button">
+                    <button id="yes">Yes</button>&nbsp;
+                    <button id="no">No</button>&nbsp;
+                </div>
+                </div>
+            </div>
+        </center>
+        <div class="copyright">
+            <hr>
+            <footer>
+                <span>All copyright recevied by <a href="https://instagram.com/cyber_d_kdo">Cyber-D | K.D.O</a></span>
+            </footer>
+        </div>
+    </div>
+    <script>
+        var no = document.getElementById("no");
+        no.addEventListener("click", function (event){
+            setTimeout(function(){
+                window.location.href = "kidding.html";
+                }, 1000);
+        })
+        var yes = document.getElementById("yes");
+        yes.addEventListener("click", function (event){
+            setTimeout(function(){
+                window.location.href = "love.html";
+                }, 1000);
+        })
+    </script>
+</body>
+</html>
