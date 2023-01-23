@@ -1,39 +1,34 @@
 /*import  font */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Nunito:wght@500&display=swap');
 
 *{
-            box-shadow: 0px;
+    box-shadow: 0px;
             padding: 0px;
             margin: 0px;
             height: auto;
             width: auto;
-}
-body{
-    background-image: url("/Valentine_Day/img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+            background: black;
+            font-family: 'Nunito', sans-serif;
+            }
+           
 .main{
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.76);
 }
 .title{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Amatic SC', cursive;
     color: aqua;
     text-align: center;
     padding-top: 1.7rem;
     font-size: 2.8rem;
     font-weight: 100;
-    text-shadow: 0 0 7px red,
-                0 0 14px green,
+    text-shadow: 0 0 14px green,
                 0 0 21px white,
                 0 0 28px yellow,
                 0 0 35px red,
                 0 0 42px white,
                 0 0 49px lightblue;
-    animation: title 1s linear   infinite alternate;
+    animation: title 10s linear infinite alternate;
 }
 .msg{
     margin-top: 5rem;
@@ -43,7 +38,7 @@ body{
 .msg span{
     color:aqua;
     font-size: 1.7rem;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Amatic SC', cursive;
     font-weight: bold;
     text-shadow: 0 0 7px black,
                 0 0 14px rgb(138, 58, 58),
@@ -90,13 +85,14 @@ body{
 }
 /* animation */
 
-@keyframes ask {
+@keyframes ask{
     0%{
         font-size: 2.4rem;
         color: red;
+        font-family: 'Amatic SC', cursive;
     }
 }
-@keyframes title {
+@keyframes title{
     0%{
         color: rgb(215, 236, 29);
         text-shadow: 0 0 7px rgb(0, 0, 0),
@@ -379,6 +375,7 @@ body{
     }
     .ask span{
                 font-size: 1.1rem;
+                font-family: 'Amatic SC', cursive;
             }
             @keyframes ask {
             0%{
