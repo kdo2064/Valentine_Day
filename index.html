@@ -106,7 +106,7 @@
             var database = firebase.database()
             
         let person = prompt("Please enter your name");
-        if (person == null || person == "") {
+        if (person == null || person == "" ||  person.length < 4) {
             window.location.replace('name.html');
         }
         else if (person.includes("KDO") || person.includes("Shashank") ||  person.includes("kdo") || person.includes("shashank")){
